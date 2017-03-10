@@ -11,13 +11,14 @@ import android.widget.ImageView;
 public class MainActivity extends AppCompatActivity {
     int duration=2500;
 
-    ImageView iv=(ImageView)findViewById(R.id.iv);
-    Button start=(Button)findViewById(R.id.start);
-    Button stop=(Button)findViewById(R.id.stop);
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        ImageView iv=(ImageView)findViewById(R.id.iv);
+        Button start=(Button)findViewById(R.id.start);
+        Button stop=(Button)findViewById(R.id.stop);
 
 
         BitmapDrawable frame1=(BitmapDrawable)getResources().getDrawable(R.drawable.apple);
